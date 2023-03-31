@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MRstudio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Home Page Section -->
+  <div class="container bg-white h-screen mx-auto relative" id="home">
+    <div class="w-full flex justify-between items-baseline py-4">
+      <h1 class="text-xl text-black font-bold cursor-pointer">MRstudio</h1>
+      <div class="w-2/6 hidden md:flex justify-between">
+        <ul class="flex gap-5 font-bold border-slate-900">
+          <li><a href="#" class="hover:text-slate-300">About</a></li>
+          <li><a href="#about" class="hover:text-slate-300">Types of House</a></li>
+          <li><a href="#" class="hover:text-slate-300">Contact</a></li>
+        </ul>
+        <button class="border-2 border-slate-300 px-3 rounded-md text-black font-bold hover:bg-slate-300 hover:text-white">Login</button>
+      </div>
+
+      <!-- Menu Toggler -->
+      <button class="block md:hidden border-2 border-slate-300 py-1 px-3 rounded-md text-black font-bold hover:bg-slate-300 hover:text-white" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <button class="hidden md:hidden border-2 border-slate-300 py-1 px-3 rounded-md text-black font-bold hover:bg-slate-300 hover:text-white" id="xmenu-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Menu to toggle in medium screen -->
+      <div class="w-3/6 h-52 flex flex-col hidden justify-between items-center absolute top-16 right-0 z-50 bg-cyan-100 py-5 rounded-2xl" id="menu">
+        <ul class="flex flex-col justify-center items-center gap-5 font-bold">
+          <li><a href="#" class="hover:text-slate-300">About</a></li>
+          <li><a href="#" class="hover:text-slate-300">Types of House</a></li>
+          <li><a href="#" class="hover:text-slate-300">Contact</a></li>
+        </ul>
+      <button class="w-3/6 border-2 border-slate-300 px-3 rounded-md text-black font-bold hover:bg-slate-300 hover:text-white">Login</button>
+      </div>
+    </div>
+
+    
+
+    <div class="container rounded-lg bg-teal-200 h-3/4 pl-8 pl-16 pt-8 pt-16 relative overflow-hidden" id="main-bg">
+      <div class="w-full md:w-3/5 h-3/4">
+        <h1 class="text-xl md:text-7xl text-white font-bold tracking-widest">
+          Enjoy Your <br> Dream Vacation
+        </h1>
+        <p class="py-6 text-sm text-white font-bold w-10/12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur expedita impedit, debitis, atque mollitia tempora et, dolor natus sapiente sequi porro vero?</p>
+        <div class="w-3/6 h-1/5 flex gap-4 items-center pt-3">
+          <div class="w-12 h-12 border-2 border-white rounded-full flex justify-center items-center"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAK1JREFUSEvVlNERgjAQRB+VYAlQAZRAK1ZAKbZACdKBJdgJTBzjONHoJvEcyF9mLvtuc5tUGK/KWB8VMAAj0Hxp6AocgcnXqQB3sBbdXoA2FbCI4i+6qoO/AnxTHhrunYtH4zkOzAHKOIocFAF64AQcFJV7TdIMUvIeRvI5adErCpMRGlHjuh3Ap6z/5IrMAfufwX4dJDzkt6XRd3AGukL1GXBfzm2p33U20xywApESKhkqKb/UAAAAAElFTkSuQmCC"/> </div>
+          <p class="font-bold text-white">Worwick Hotels & Resorts</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-11/12 mx-auto absolute flex flex-col md:flex-row justify-evenly bg-white inset-x-0 bottom-8 z-10 h-2/6 md:h-1/4 border-2 rounded-lg border-slate-300 shadow-xl">
+      <div class="w-full md:w-1/3 h-full flex flex-col justify-evenly">
+        <div class="w-full h-1/5 flex justify-between items-baseline">
+          <h1 class="text-lg md:text-2xl font-bold">
+            Facilities
+          </h1>
+          <p class="text-sm text-rose-500 cursor-pointer"><a href="#">See More</a></p>
+        </div>
+        <div class="w-full h-3/5 flex justify-evenly items-center">
+          <div class="w-1/4 flex flex-col items-center">
+            <div class="border-2 rounded-full flex justify-center items-center w-8 h-8 text-sky-400"><i class="fa-solid fa-person-swimming"></i></div>
+            <h2 class="text-md md:text-lg font-bold">Swimming</h2>
+          </div>
+          <div class="w-1/4 flex flex-col items-center">
+            <div class="border-2 rounded-full flex justify-center items-center w-8 h-8 text-rose-600"><i class="fa-solid fa-wifi"></i></div>
+            <h2 class="text-md md:text-lg font-bold">Wifi</h2>
+          </div>
+          <div class="w-1/4 flex flex-col items-center">
+            <div class="border-2 rounded-full flex justify-center items-center w-8 h-8 text-cyan-300"><i class="fa-solid fa-book-open-reader"></i></div>
+            <h2 class="text-md md:text-lg font-bold">AC</h2>
+          </div>
+          <div class="w-1/4 flex flex-col items-center">
+            <div class="border-2 rounded-full flex justify-center items-center w-8 h-8 text-rose-600"><i class="fa-solid fa-house"></i></div>
+            <h2 class="text-md md:text-lg font-bold">Dinner</h2>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="w-full md:w-1/5 h-full flex flex-col justify-center items-center rounded-lg">
+        <div class="w-full h-1/5 rounded-lg flex justify-center items-center">
+          <h1 class="text-lg md:text-2xl font-bold">Hotels For You</h1>
+        </div>
+        <h2 class="text-md md:text-xl text-slate-400 py-2 md:py-5">5 Days 6 Nights</h2>
+        <div class="w-full h-1/4 flex justify-evenly items-center border-2 border-slate-300 py-1 px-4 rounded-lg cursor-pointer hover:text-slate-300">
+          <div class="w-8 h-8 flex justify-center items-center rounded-full bg-blue-500 text-white "><i class="fa-solid fa-check"></i></div>
+          <h2 class="text-md md:text-lg font-bold">USD $506.00</h2>
+        </div>
+      </div>
+
+
+      <div class="w-full md:w-1/3 h-full rounded-lg flex flex-col justify-evenly">
+        <div class="w-full h-1/5 rounded-lg flex justify-evenly">
+          <input type="search" name="search" id="search" placeholder="150 results" class="w-4/5 border-2 border-slate-300 rounded-full px-4 py-1 outline-none focus:outline-none" autocomplete="off">
+          <div class="w-8 h-8 flex justify-center items-center rounded-full text-slate-300 hover:text-cyan-300 cursor-pointer" id="edit"><i class="fa-solid fa-pen"></i></div>
+          <div class="w-8 h-8 flex justify-center items-center rounded-full text-slate-300 hover:text-cyan-300 cursor-pointer" id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="w-full h-3/5 flex justify-evenly items-center ">
+          <div class="w-8 h-8 flex justify-center items-center rounded-full">
+            <img class="w-8 h-8 rounded-full cursor-pointer" src="https://picsum.photos/id/238/200/300" alt="">
+          </div>
+          <div class="w-8 h-8 flex justify-center items-center rounded-full">
+            <img class="w-8 h-8 rounded-full cursor-pointer" src="https://picsum.photos/id/240/200/300" alt="">
+          </div>
+          <div class="w-8 h-8 flex justify-center items-center rounded-full">
+            <img class="w-8 h-8 rounded-full cursor-pointer" src="https://picsum.photos/id/1/200/300" alt="">
+          </div>
+          <div class="w-8 h-8 flex justify-center items-center rounded-full">
+            <img class="w-8 h-8 rounded-full cursor-pointer" src="https://picsum.photos/id/257/200/300" alt="">
+          </div>
+          <div class="w-8 h-8 flex justify-center items-center rounded-full">
+            <img class="w-8 h-8 rounded-full cursor-pointer" src="https://picsum.photos/id/308/200/300" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- End of Home Page Section -->
+
+
+<!-- Entire City Of Choice -->
+  <div class="container w-screen h-screen mx-auto flex flex-col justify-center items-center overflow-hidden" id="price">
+    <h1 class="text-2xl md:text-6xl font-bold py-5">Entire City Of Choice</h1>
+    <div class="w-full h-2/4 md:h-3/4 relative flex justify-evenly items-center overflow-visible">
+
+      <!-- City-1 -->
+      <div class="w-1/4 h-4/5 bg-slate-100 z-50 rounded-lg shadow-2xl overflow-hidden block">
+        <!-- cities -->
+        <div class="w-full h-4/6 relative p-4" id="city-1">
+          <h1 class="text-md md:text-xl text-cyan-900 font-bold absolute left-2">
+            MRstudio Resorts 1
+          </h1>
+        </div>
+        <div class="w-full h-2/6 flex flex-col items-center p-2 md:p-4">
+          <div class="w-full h-2/5 flex items-center">
+            <h2 class="text-sm md:text-lg text-rose-500 font-bold">$400.00</h2>
+          </div>
+          <div class="w-full h-3/5 flex">
+            <div class="w-full md:w-9/12 h-full flex flex-col justify-center">
+              <h2 class="text-md hidden md:block font-bold">Banking ID: 123456789</h2>
+              <h3 class="text-sm md:text-md text-slate-300 font-bold">BPI</h3>
+            </div>
+            <div class="w-3/12 h-full flex justify-center items-center">
+              <div class="w-16 h-16 border-2 border-white rounded-full flex flex-col justify-center items-center hover:bg-teal-200 cursor-pointer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAK1JREFUSEvVlNERgjAQRB+VYAlQAZRAK1ZAKbZACdKBJdgJTBzjONHoJvEcyF9mLvtuc5tUGK/KWB8VMAAj0Hxp6AocgcnXqQB3sBbdXoA2FbCI4i+6qoO/AnxTHhrunYtH4zkOzAHKOIocFAF64AQcFJV7TdIMUvIeRvI5adErCpMRGlHjuh3Ap6z/5IrMAfufwX4dJDzkt6XRd3AGukL1GXBfzm2p33U20xywApESKhkqKb/UAAAAAElFTkSuQmCC"/> 
+              <p class="text-sm text-slate-900 font-bold">Pay</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- City-2 -->
+      <div class="w-1/4 h-4/5 bg-slate-100 z-50 rounded-lg shadow-2xl overflow-hidden block">
+        <!-- cities -->
+        <div class="w-full h-4/6 relative p-4" id="city-2">
+          <h1 class="text-md md:text-xl text-cyan-900 font-bold absolute left-2">
+            MRstudio Resorts 2
+          </h1>
+        </div>
+        <div class="w-full h-2/6 flex flex-col items-center p-2 md:p-4">
+          <div class="w-full h-2/5 flex items-center">
+            <h2 class="text-sm md:text-lg text-rose-500 font-bold">$340.00</h2>
+          </div>
+          <div class="w-full h-3/5 flex">
+            <div class="w-full md:w-9/12 h-full flex flex-col justify-center">
+              <h2 class="text-md hidden md:block font-bold">Banking ID: 123456789</h2>
+              <h3 class="text-sm md:text-md text-slate-300 font-bold">BDO</h3>
+            </div>
+            <div class="w-3/12 h-full flex justify-center items-center">
+              <div class="w-16 h-16 border-2 border-white rounded-full flex flex-col justify-center items-center hover:bg-teal-200 cursor-pointer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAK1JREFUSEvVlNERgjAQRB+VYAlQAZRAK1ZAKbZACdKBJdgJTBzjONHoJvEcyF9mLvtuc5tUGK/KWB8VMAAj0Hxp6AocgcnXqQB3sBbdXoA2FbCI4i+6qoO/AnxTHhrunYtH4zkOzAHKOIocFAF64AQcFJV7TdIMUvIeRvI5adErCpMRGlHjuh3Ap6z/5IrMAfufwX4dJDzkt6XRd3AGukL1GXBfzm2p33U20xywApESKhkqKb/UAAAAAElFTkSuQmCC"/> 
+              <p class="text-sm text-slate-900 font-bold">Pay</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- City-3 -->
+      <div class="w-1/4 h-4/5 bg-slate-100 z-50 rounded-lg shadow-2xl overflow-hidden block">
+        <!-- cities -->
+        <div class="w-full h-4/6 relative p-4" id="city-3">
+          <h1 class="text-md md:text-xl text-cyan-900 font-bold absolute left-2">
+            MRstudio Resorts 3
+          </h1>
+        </div>
+        <div class="w-full h-2/6 flex flex-col items-center p-2 md:p-4">
+          <div class="w-full h-2/5 flex items-center">
+            <h2 class="text-sm md:text-lg text-rose-500 font-bold">$480.00</h2>
+          </div>
+          <div class="w-full h-3/5 flex">
+            <div class="w-full md:w-9/12 h-full flex flex-col justify-center">
+              <h2 class="text-md hidden md:block font-bold">Banking ID: 123456789</h2>
+              <h3 class="text-sm md:text-md text-slate-300 font-bold">RCBC</h3>
+            </div>
+            <div class="w-3/12 h-full flex justify-center items-center">
+              <div class="w-16 h-16 border-2 border-white rounded-full flex flex-col justify-center items-center hover:bg-teal-200 cursor-pointer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAK1JREFUSEvVlNERgjAQRB+VYAlQAZRAK1ZAKbZACdKBJdgJTBzjONHoJvEcyF9mLvtuc5tUGK/KWB8VMAAj0Hxp6AocgcnXqQB3sBbdXoA2FbCI4i+6qoO/AnxTHhrunYtH4zkOzAHKOIocFAF64AQcFJV7TdIMUvIeRvI5adErCpMRGlHjuh3Ap6z/5IrMAfufwX4dJDzkt6XRd3AGukL1GXBfzm2p33U20xywApESKhkqKb/UAAAAAElFTkSuQmCC"/> 
+              <p class="text-sm text-slate-900 font-bold">Pay</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="w-full h-2/5 bg-cyan-100 absolute bottom-1 inset-x-0 rounded-2xl flex justify-center items-end">
+        <button class="w-8 h-8 rounded-full bg-black text-white -mb-4 cursor-pointer z-60 hover:bg-neutral-500">
+          <a href="#down"><i class="fa-solid fa-arrow-down"></i></a>
+        </button>
+      </div>
+    </div>
+  </div>
+<!-- End of Entire City of Choice -->
+
+<!-- Start of Resort Surprises -->
+<div class="container w-screen h-screen mx-auto flex flex-col md:flex-row" id="down">
+  <div class="w-full md:w-5/12 h-full p-6 flex flex-col gap-5">
+    <h1 class="text-2xl md:text-6xl font-bold pt-6">Resort Surprises</h1>
+    <p class="text-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente assumenda sint maiores culpa nihil suscipit</p>
+    <div class="mx-auto w-full h-4/6">
+      <div class="w-9/12 h-1/4 flex items-center gap-4">
+        <div class="w-8 md:w-12 h-8 md:h-12 border-2 border-slate-300 bg-slate-300 rounded-full flex justify-center items-center text-blue-500 text-lg md:text-2xl font-bold"><i class="fa-solid fa-person-swimming"></i></div>
+        <h2 class="text-lg md:text-2xl font-bold text-slate-300">Infinity Pool</h2>
+      </div>
+      <div class="w-9/12 h-1/4 flex items-center gap-4">
+        <div class="w-8 md:w-12 h-8 md:h-12 border-2 border-slate-300 bg-slate-300 rounded-full flex justify-center items-center text-blue-500 text-lg md:text-2xl font-bold"><i class="fa-solid fa-umbrella-beach"></i></div>
+        <h2 class="text-lg md:text-2xl font-bold text-slate-300">The Beach</h2>
+      </div>
+      <div class="w-9/12 h-1/4 flex items-center gap-4">
+        <div class="w-8 md:w-12 h-8 md:h-12 border-2 border-slate-300 bg-slate-300 rounded-full flex justify-center items-center text-blue-500 text-lg md:text-2xl font-bold"><i class="fa-solid fa-tree"></i></div>
+        <h2 class="text-lg md:text-2xl font-bold text-slate-300">Beach Surprise</h2>
+      </div>
+      <div class="w-9/12 h-1/4 flex items-center gap-4">
+        <div class="w-8 md:w-12 h-8 md:h-12 border-2 border-slate-300 bg-slate-300 rounded-full flex justify-center items-center text-blue-500 text-lg md:text-2xl font-bold"><i class="fa-solid fa-volleyball"></i></div>
+        <h2 class="text-lg md:text-2xl font-bold text-slate-300">Beach Activity</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full md:w-7/12 h-full relative flex justify-center pt-6 px-14"> 
+    <!-- buttons of image -->
+    <div class="w-11/12 h-2/6 mx-auto bg-cyan-100 rounded-2xl bottom-0 absolute flex justify-center items-end pb-6 inset-x-0">
+      <img class="w-12 h-12 rounded-full mr-8 cursor-pointer z-80" src="img/city-1.jpg" alt="" id="image1">
+      <img class="w-12 h-12 rounded-full mr-8 cursor-pointer z-80" src="img/city-2.jpg" alt="" id="image2">
+      <img class="w-12 h-12 rounded-full mr-8 cursor-pointer z-80" src="img/city-3.jpg" alt="" id="image3">
+      <img class="w-12 h-12 rounded-full cursor-pointer z-80" src="img/main-bg.jpg" alt="" id="image4">
+    </div>
+
+    <!-- images/videos -->
+    <div class="w-10/12 h-4/6 md:h-5/6 mx-auto rounded-2xl bg-slate-700 z-50 overflow-hidden">
+      <img class="w-full h-full object-fit z-20 duration-100 ease-in" src="img/city-1.jpg" alt="" id="image">
+    </div>
+  </div>
+</div>
+<!-- End of Resort Surprises -->
+
+<!-- Start of Relaxing -->
+<div class="container mx-auto h-screen flex items-center">
+  <div class="w-full h-4/6 mx-auto flex flex-col justify-center items-center md:flex-row">
+    <!-- Image Area -->
+    <div class="w-3/6 h-full flex justify-evenly items-center">
+      <div class="w-1/4 h-full flex justify-center items-end rounded-2xl overflow-hidden">
+        <img src="img/relaxing-1.jpg" alt="" class="w-full h-3/4 rounded-2xl shadow-xl">
+      </div>
+      <div class="w-1/4 h-full flex justify-center items-start rounded-2xl overflow-hidden">
+        <img src="img/relaxing-2.jpg" alt="" class="w-full h-3/4 rounded-2xl shadow-xl">
+      </div>
+      <div class="w-1/4 h-full flex justify-center items-end rounded-2xl overflow-hidden">
+        <img src="img/relaxing-3.jpg" alt="" class="w-full h-3/4 rounded-2xl shadow-xl">
+      </div>
+    </div>
+    <!-- Text Area -->
+    <div class="w-3/6 h-full pt-16 flex flex-col gap-3 md:gap-5">
+      <h2 class="text-md md:text-xl font-bold text-rose-500">Welcome to MRstudio Resort</h2>
+      <h1 class="text-lg md:text-6xl font-bold">Relaxing Pleasure</h1>
+      <h3 class="text-sm md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores obcaecati optio inventore blanditiis tenetur ratione ea sunt aliquam earum nostrum! Et, adipisci eos voluptates tenetur numquam, minus corporis nisi ad nihil obcaecati voluptatem laborum harum sequi.</h3>
+    </div>
+  </div>
+</div>
+<!-- End of Relaxing -->
+
+
+<!-- Start of top Airlines -->
+<div class="w-full h-screen flex items-end">
+  <div class="w-full h-5/6 md:h-4/6 bg-cyan-100 flex justify-center">
+    <div class="container m-auto h-5/6 flex flex-col md:flex-row justify-evenly items-center bg-white rounded-xl">
+      <!-- Text Area -->
+      <div class="w-full md:w-7/12 h-full py-6 px-12">
+        <h1 class="text-2xl md:text-4xl font-bold">Search for other Top Airlines</h1>
+        <div class="w-full h-full flex">
+          <div class="w-3/6 h-5/6 flex flex-col justify-evenly items-start">
+            <div class="hover:text-slate-400 text-slate-500 flex gap-4"><img src="img/airasia.png" alt="" class="w-12 h-8"><a href="https://www.airasia.com/flight/en/gb" target="_blank">AirAsia</a></div>
+            <div class="flex gap-4 hover:text-slate-400 text-slate-500"><img src="img/PhilippineAirline.png" alt="" class="w-12 h-8"><a href="https://flights.philippineairlines.com/en-ph/" target="_blank">Philippine Airlines</a></div>
+            <div class="flex gap-4 hover:text-slate-400 text-slate-500 "><img src="img/SingaporeAirline.png" alt="" class="w-12 h-8"><a href="https://www.singaporeair.com/en_UK/ph/home" target="_blank">Singapore Airlines</a></div>           
+          </div>      
+
+          <div class="w-3/6 h-5/6 flex flex-col justify-evenly items-start pl-6">
+            <div class="flex  hover:text-slate-400 text-slate-500 gap-4"><img src="img/JapanAirlines.png" alt="" class="w-12 h-8"><a href="https://www.jal.co.jp/ph/en/" target="_blank">Japan Airlines</a></div>
+            <div class="flex hover:text-slate-400 text-slate-500 gap-4"><img src="img/CathayPacific.png" alt="" class="w-12 h-8"><a href="https://www.cathaypacific.com/cx/en_PH.html" target="_blank">Cathay Pacific</a></div>
+            <div class="flex hover:text-slate-400 text-slate-500 gap-4"><img src="img/AsianaAirlines.png" alt="" class="w-12 h-8"><a href="https://flyasiana.com/C/PH/EN/index" target="_blank">Asiana Airlines</a></div>           
+          </div>               
+        </div>
+      </div>
+      <!-- Image Area -->
+      <div class="hidden md:block w-5/12 h-full relative">
+        <img src="img/travel girl.png" alt="" class="absolute bottom-0 left-0 w-auto h-screen">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Top Airlines -->
+
+<!-- Start of Get Better Work -->
+<div class="w-screen h-screen">
+  <!-- Get better at Work -->
+  <div class="w-full h-3/6 flex flex-col justify-center items-center gap-4">
+    <h1 class="text-2xl md:text-6xl font-bold">Get Better in Work</h1>
+    <h3 class="text-lg md:text-xl text-slate-500">See why millions fo people across 195 countries use Dash.</h3>
+    <div class="w-full md:w-3/6 h-10 flex gap-3 justify-center items-center">
+      <input type="search" name="search" id="search" placeholder="example@gmail.com" class="w-4/6 border-2 border-slate-300 rounded-full px-4 py-1 outline-none focus:outline-none" autocomplete="off">
+      <button class="w-20 md:w-40 py-2 px-3 rounded-md font-bold bg-blue-500 hover:bg-blue-400 text-white text-md md:text-lg">Try for Free</button>
+    </div>
+  </div>
+
+  <!-- List of Contacts -->
+  <div class="w-full h-3/6 flex flex-col md:flex-row justify-center items-center">
+    <!-- First -->
+    <div class="w-full md:w-4/12 h-full flex flex-col justify-between py-3 px-6">
+      <div class="w-full">
+        <h1 class="font-bold text-2xl md:text-4xl mb-5">MRstudio</h1>
+        <p class="text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque nisi atque praesentium animi ab incidunt officiis doloribus iste adipisci magnam</p>
+      </div>
+      <div class="w-80 h-10 mx-auto flex justify-evenly">
+        <div class="w-10 h-10 flex justify-center items-center rounded-full text-4xl text-slate-500 hover:text-slate-300">
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="w-10 h-10 flex justify-center items-center rounded-full text-4xl text-slate-500 hover:text-slate-300">
+          <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>          
+        </div>
+        <div class="w-10 h-10 flex justify-center items-center rounded-full text-4xl text-slate-500 hover:text-slate-300">
+          <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="w-10 h-10 flex justify-center items-center rounded-full text-4xl text-slate-500 hover:text-slate-300">
+          <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+  <!-- Second -->
+    <div class="w-full md:w-4/12 h-full flex flex-col md:flex-row">
+      <!-- Links -->
+      <div class="w-full md:w-3/6 h-full flex flex-col gap-4 items-center py-3">
+        <h1 class="text-xl font-bold">Links</h1>
+        <ul class="flex flex-row md:flex-col gap-3">
+          <li class="text-slate-500 hover:text-slate-300"><a href="#home">Home</a></li>
+          <li class="text-slate-500 hover:text-slate-300"><a href="#price">Pricing</a></li>
+          <li class="text-slate-500 hover:text-slate-300"><a href="#">Download</a></li>
+          <li class="text-slate-500 hover:text-slate-300"><a href="#">About</a></li>
+          <li class="text-slate-500 hover:text-slate-300"><a href="#">Services</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="w-full md:w-3/6 h-full flex flex-col gap-4 items-center py-3">
+        <h1 class="text-xl font-bold">Support</h1>
+        <ul class="flex flex-row md:flex-col gap-3">
+          <li class="text-slate-500 hover:text-slate-300"><a href="#">FAQ</a></li>
+          <li class="text-slate-500 hover:text-slate-300"><a href="#">How</a></li>
+          <li class="text-slate-500 hover:text-slate-300"><a href="#">Features</a></li>
+          <li class="text-slate-500 hover:text-slate-300"><a href="#">Contact</a></li>
+          <li class="text-slate-500 hover:text-slate-300"><a href="#">Reporting</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Third -->
+    <div class="w-full md:w-4/12 h-full flex flex-col gap-4 items-center py-3 px-6">
+      <h1 class="text-xl font-bold">Contact Us</h1>
+        <ul class="flex flex-row md:flex-col gap-3">
+          <li class="text-sm text-slate-500 hover:text-slate-300">+880 12345678</li>
+          <li class="text-slate-500 hover:text-slate-300">andrew@gmail.com</li>
+        </ul>
+    </div>
+  </div>
+</div>
+<!-- End of Get Better Work -->
+
+<!-- Footer -->
+<div class="container mx-auto h-12 border-t-2 border-slate-200 hidden md:flex justify-between items-center">
+<h3 class="text-md text-slate-500 font-bold">Copyright & Design by <a href="https://johnandrewregistos.github.io/online-site/" target="_blank" class="text-rose-500 hover:text-rose-400">Jandrew</a></h3>
+<ul class="flex gap-3">
+  <li class="px-3 border-r-2 border-slate-500 text-slate-500 hover:text-slate-300"><a href="#">Terms of Use</a></li>
+  <li class="text-slate-500 hover:text-slate-300"><a href="#">Policy Privacy</a></li>
+</ul>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>

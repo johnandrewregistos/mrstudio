@@ -1,0 +1,34 @@
+*{
+  scroll-behavior: smooth;
+}
+
+body{
+ overflow-x: hidden;
+}
+
+#main-bg{
+  background-image: url(img/main-bg.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#city-1{
+  background-image: url(img/city-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#city-2{
+  background-image: url(img/city-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#city-3{
+  background-image: url(img/city-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
