@@ -7,9 +7,9 @@ body{
 }
 
 #main-bg{
-  background-image: url(img/main-bg.png);
-  background-position: top;
-  background-size: cover;
+  background-image: url(img/main-bg.jpg);
+  background-position: right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
